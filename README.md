@@ -5,9 +5,8 @@
 
 ![readmeMain](/ReadMe/ReadMeAsset/readme_main.png)
 
---------------
 
-## 27th iOS Seminar Curriculum
+## 27th iOS Seminar Curriculum 🍎
 
 ![readme_seminar_list](/ReadMe/ReadMeAsset/readme_seminar_list.png)
 
