@@ -3,13 +3,13 @@
 
 -------------------
 
-![readmeMain](/Users/jaychoi/Desktop/청년 최영재/sopt/2020-2 iOS SOPT GitHub/ChoiYoungJae/ReadMe/ReadMeAsset/readme_main.png)
+![readmeMain](/ReadMe/ReadMeAsset/readme_main.png)
 
 --------------
 
 ## 27th iOS Seminar Curriculum
 
-![readme_seminar_list](/Users/jaychoi/Desktop/청년 최영재/sopt/2020-2 iOS SOPT GitHub/ChoiYoungJae/ReadMe/ReadMeAsset/readme_seminar_list.png)
+![readme_seminar_list](/ReadMe/ReadMeAsset/readme_seminar_list.png)
 
 
 | Week | Contents | Date | Note |
