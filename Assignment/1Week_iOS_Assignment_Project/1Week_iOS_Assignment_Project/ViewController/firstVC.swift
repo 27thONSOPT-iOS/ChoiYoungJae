@@ -15,17 +15,28 @@ class firstVC: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var moveLoginButton: UIButton!
     
+    var part: String?
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         VCSet()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+
+        getData()
+    
         
     }
+    
     
     @IBAction func moveLoginButtonAction(_ sender: Any) {
         guard let navVC = self.storyboard?.instantiateViewController(identifier: "navigationControllerVC") else {return}
         navVC.modalPresentationStyle = .fullScreen
         self.present(navVC, animated: true, completion: nil)
     }
+    
     
 }
 
@@ -40,9 +51,28 @@ extension firstVC {
         
         partLabel.text = "iOS"
         
-        helloLabel.text = "영재야 정신차려"
+        helloLabel.text = "저는 도전과제도 못하는 바보입니다"
         
         moveLoginButton.setTitle("로그인 하러 가기", for: .normal)
         moveLoginButton.setTitleColor(.lightGray, for: .normal)
+        
+    }
+
+    
+    private func getData(){
+        // 옵셔널 바인딩
+        if let part = self.part,
+           let name = self.name {
+            // 값 대입
+            self.partLabel.text = part
+//            self.partLabel.sizeToFit()
+            self.helloLabel.text = "\(name) 이 자식아 정신차리라고"
+//            self.helloLabel.sizeToFit()
+
+            print("part : ", part)
+            print("name : ", name)
+
+        }
     }
 }
+

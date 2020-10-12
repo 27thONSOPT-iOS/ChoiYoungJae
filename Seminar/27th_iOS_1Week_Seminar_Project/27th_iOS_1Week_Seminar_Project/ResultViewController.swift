@@ -20,6 +20,8 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabel()
+
+        
         // Do any additional setup after loading the view.
     }
     
@@ -34,6 +36,8 @@ class ResultViewController: UIViewController {
            let isAutoUpdate = self.isAutoUpdate,
            let updateInterval = self.updateInterval {
             
+            print("호우1")
+
             // Label에 값을 대입
             self.emailLabel.text = email
             self.emailLabel.sizeToFit()

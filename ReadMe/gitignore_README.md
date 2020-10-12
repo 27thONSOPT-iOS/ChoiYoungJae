@@ -54,7 +54,7 @@ sudo find / -type f -name '\.DS_Store' -print -delete
 ```
 위의 코드를 입력해주면 .DS_Store 파일이 전부 지워진다.  
 사실 꼭 필요하진 않으니 나처럼 .DS_Store 싫어하는 사람만 지워주면 되고  
-rm 명령어를 써서 하나하나 지워주는것도 빠르다.  
+rm 명령어를 써서 하나하나 지워주는 것도 나쁘지 않다.  
 
 
 
