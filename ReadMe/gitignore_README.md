@@ -33,6 +33,13 @@ vi .gitignore 를 입력해서 아까 만들어준 파일에 쓰기모드로 들
 
 거기에 복사한 내용들을 붙여넣기 해주고, :wq!를 눌러 저장하고 나오면 .gitignore 생성 완료!  
 
+나같은 경우는 .DS_Store를 지우기 위해서 복사한 내용에 아래의 코드를 추가해주었다.
+```
+#.DS_Store
+```
+gitignore에 이것 까지 추가하면 정말로 .gitignore 설정하기 끝!!
+
+
 ## .DS_Store 삭제하기
 gitignore를 해준다면 .DS_Store를 추적하지 않고 push를 하기 때문에 상관은 없지만,  
 나같이 그냥 .DS_Store가 꼴보기 싫은 사람들은 보이는 족족 .DS_Store를 지워줘도 된다!  

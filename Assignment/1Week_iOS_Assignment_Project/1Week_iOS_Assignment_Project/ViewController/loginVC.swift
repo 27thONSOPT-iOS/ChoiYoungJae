@@ -9,21 +9,55 @@ import UIKit
 
 class loginVC: UIViewController {
 
+    @IBOutlet weak var loginPartNameLabel: UILabel!
+    @IBOutlet weak var loginNameLabel: UILabel!
+    @IBOutlet weak var loginPartTextField: UITextField!
+    @IBOutlet weak var loginNameTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var moveSignUpButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginVCSet()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func loginButtonAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
+    @IBAction func moveSignUpButtonAction(_ sender: Any) {
+        guard let signUpVC = self.storyboard?.instantiateViewController(identifier: "signUpVC") else {return}
+        
+        self.navigationController?.pushViewController(signUpVC, animated: true)
+    }
+    
+    
+}
 
+extension loginVC {
+    private func loginVCSet(){
+        
+        self.navigationItem.title = "Login"
+        
+        loginPartNameLabel.text = "파트"
+        loginPartNameLabel.font = UIFont.boldSystemFont(ofSize: UIFont.labelFontSize)
+        
+        loginNameLabel.text = "이름"
+        loginNameLabel.font = UIFont.boldSystemFont(ofSize: UIFont.labelFontSize)
+        
+//        250 197 12
+        
+        loginButton.setTitle("로그인", for: .normal)
+        self.loginButton.backgroundColor = UIColor.black
+        loginButton.setTitleColor(.systemYellow, for: .normal)
+        loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+        
+        moveSignUpButton.setTitle("회원가입", for: .normal)
+        self.moveSignUpButton.backgroundColor = UIColor.black
+        moveSignUpButton.setTitleColor(.systemYellow, for: .normal)
+        moveSignUpButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+
+
+    }
 }
