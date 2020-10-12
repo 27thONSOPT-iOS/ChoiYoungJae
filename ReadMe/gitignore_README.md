@@ -8,28 +8,28 @@
 그럼 어떻게 .gitignore를 설정하느냐??  
 우선 터미널에서 github에 올릴 레포 경로로 이동한다!  
 
-![gitignore1](/ReadMe/ReadMeAsset/gitignore1)  
+![gitignore1](/ReadMe/ReadMeAsset/gitignore1.png)  
 
 ls -al을 입력해주면 현재 내가 위치한 경로의 파일들을 볼 수 있다.  
 여기서 touch .gitignore를 입력해주면 .gitignore 파일이 만들어진다.  
 
-![gitignore2](/ReadMe/ReadMeAsset/gitignore2)  
+![gitignore2](/ReadMe/ReadMeAsset/gitignore2.png)  
 
 이후 다시 ls -al을 입력하면 .gitignore가 생성되어 있음을 확인할 수 있다.  
 그럼 이제 http://gitignore.io 로 이동해보자  
 여기는 gitignore에 입력할 내용을 만들어주는 홈페이지다.  
 
-![gitignore3](/ReadMe/ReadMeAsset/gitignore3)  
+![gitignore3](/ReadMe/ReadMeAsset/gitignore3.png)  
 
 내가 사용할 언어인  swift, 아요 개발에 사용할 툴 Xcode, 나중에 라이브러리를 사용할 테니 cocoapods까지 검색해서 입력해준다.  
 
-![gitignore4](/ReadMe/ReadMeAsset/gitignore4)  
+![gitignore4](/ReadMe/ReadMeAsset/gitignore4.png)  
 
 그럼 이런 친구들을 만날 수 있는데 전부 복사해준다.  
 이후 터미널로 다시 돌아와 쓰기를 위한 vi 명령어를 사용한다.  
 vi .gitignore 를 입력해서 아까 만들어준 파일에 쓰기모드로 들어간다.  
 
-![gitignore5](/ReadMe/ReadMeAsset/gitignore5)  
+![gitignore5](/ReadMe/ReadMeAsset/gitignore5.png)  
 
 거기에 복사한 내용들을 붙여넣기 해주고, :wq!를 눌러 저장하고 나오면 .gitignore 생성 완료!  
 
@@ -45,8 +45,9 @@ rm .DS_Store
 ```
 sudo find / -type f -name '\.DS_Store' -print -delete
 ```
-위의 코드를 입력해주면 .DS_Store 파일이 전부 지워진다.
-사
+위의 코드를 입력해주면 .DS_Store 파일이 전부 지워진다.  
+사실 꼭 필요하진 않으니 나처럼 .DS_Store 싫어하는 사람만 지워주면 되고  
+rm 명령어를 써서 하나하나 지워주는것도 빠르다.  
 
 
 
