@@ -1,6 +1,8 @@
 # ChoiYoungJae
 27th iOS OB 최영재 👨🏻‍💻
 
+### *[GitHub iOS 과제 프로젝트 준비하기 !! (.gitignore)](/ReadMe/gitignore_README.md)*
+
 -------------------
 
 ![readmeMain](/ReadMe/ReadMeAsset/readme_main.png)
