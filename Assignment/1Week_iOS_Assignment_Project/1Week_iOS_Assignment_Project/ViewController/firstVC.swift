@@ -24,10 +24,7 @@ class firstVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-
         getData()
-    
-        
     }
     
     
@@ -69,8 +66,6 @@ extension firstVC {
             self.helloLabel.text = "\(name) 이 자식아 정신차리라고"
 //            self.helloLabel.sizeToFit()
 
-            print("part : ", part)
-            print("name : ", name)
 
         }
     }
