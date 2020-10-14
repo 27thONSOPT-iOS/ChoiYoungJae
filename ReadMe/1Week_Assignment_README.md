@@ -16,7 +16,7 @@ Assets.xcassets 에 들어가서 원하는 사진을 Drag & Drop 해준다!
         firstViewImg.image = UIImage(named: "IMG_8167")
 ```
 
-### 2) 뷰 세팅 해주기 (Navigation Title, 라벨 내용, 버튼 내용, 색, 바탕색 등)
+### 2) 뷰 세팅 해주기 (Navigation Title, 라벨 내용, 버튼 내용, 색, 바탕색 등)  
 #### a. Navigation Title을 설정해주는 코드
 ```Swift
         self.navigationItem.title = "Login"
@@ -24,7 +24,8 @@ Assets.xcassets 에 들어가서 원하는 사진을 Drag & Drop 해준다!
 
 나중에 배울 Tab bar와 Navigation bar를 같이 쓰는 경우에는 문제가 생길수도 있다고 한다.  
 자세한 정보는 https://zeddios.tistory.com/181 참고.
-
+  
+  
 #### b. 라벨 서식 설정하기 
 우리는 라벨의 내용을 입력해주고, 그걸 bold 처리해주어야한다!  
 이 때 사용하는 코드는  
@@ -32,6 +33,7 @@ Assets.xcassets 에 들어가서 원하는 사진을 Drag & Drop 해준다!
 				loginPartNameLabel.text = "파트"
         loginPartNameLabel.font = UIFont.boldSystemFont(ofSize: 15)
 ```
+
 
 #### c. UiButton 서식 설정하기
 우리가 버튼에서 설정을 해주어야 할 부분은 버튼의 타이틀 내용과 배경색, 폰트 색과 볼드처리이다.
@@ -43,6 +45,7 @@ Assets.xcassets 에 들어가서 원하는 사진을 Drag & Drop 해준다!
         loginButton.setTitleColor(.systemYellow, for: .normal)
         loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
 ```
+
 
 
 ### 3) 화면 전환시 주의할 점!
