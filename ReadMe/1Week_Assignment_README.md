@@ -1,7 +1,7 @@
 # 1주차 과제
 
 ## 구동 화면
-![1Week_Assignment_Capture](/ReadMe/ReadMeAsset/1Week_Simulater.gif){: width="400"}
+![1Week_Assignment_Capture](/ReadMe/ReadMeAsset/1Week_Simulater.gif) {: width="400"}
 
 ## 01. Present, Push, Pop 사용하기 
 ![1Week_Assignment1](/ReadMe/ReadMeAsset/1Week_Assignment1.png)
