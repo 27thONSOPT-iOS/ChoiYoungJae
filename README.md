@@ -30,7 +30,7 @@
 
 | Week  |                           Contents                           |                       Readme                       | Duedate  |  Note  |
 | :---: | :----------------------------------------------------------: | :------------------------------------------------: | :------: | :----: |
-| 1주차 | 기본과제 : Present, Push, Pop하기 \\ 도전과제 : 데이터 전달하기 | [1Week Readme](/ReadMe/1Week_Assignment_README.md) | 20/10/16 | 작성중 |
+| 1주차 | **기본과제** : Present, Push, Pop하기 \\ **도전과제** : 데이터 전달하기 | [1Week Readme](/ReadMe/1Week_Assignment_README.md) | 20/10/16 | 작성중 |
 | 2주차 |                                                              |                                                    |          |        |
 | 3주차 |                                                              |                                                    |          |        |
 | 4주차 |                                                              |                                                    |          |        |
