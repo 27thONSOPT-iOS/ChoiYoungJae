@@ -27,19 +27,16 @@ class loginVC: UIViewController {
         guard let firstVC = self.presentingViewController as? firstVC else {return}
         
         
-        guard let lPTF = self.loginPartTextField.text else { return }
-        guard let lNTF = self.loginNameTextField.text else { return }
+        guard let part = self.loginPartTextField.text else { return }
+        guard let name = self.loginNameTextField.text else { return }
 
-            print("lPTF : ", lPTF)
-            print("lNTF : ", lNTF)
+            print("lPTF : ", name)
+            print("lNTF : ", part)
 
         
-        firstVC.part = lPTF
-        firstVC.name = lNTF
+        firstVC.part = part
+        firstVC.name = name
         
-//        firstVC.part = self.loginPartTextField?.text
-//        firstVC.name = self.loginNameTextField?.text
- 
         
         self.dismiss(animated: true, completion: nil)
     }
