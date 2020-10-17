@@ -1,4 +1,4 @@
-# 1주차 과제
+# 1주차 과제 :fire::fire::fire:
 
 ## 구동 화면
 ![1Week_Assignment_Capture](/ReadMe/ReadMeAsset/1Week_Simulater.gif) 
@@ -6,7 +6,7 @@
 ## 01. Present, Push, Pop 사용하기 
 ![1Week_Assignment1](/ReadMe/ReadMeAsset/1Week_Assignment1.png)
 
-### 1) 이미지를 삽입하는 방법?
+### 1) 이미지를 삽입하는 방법? 
 ![1Week_Assignment2](/ReadMe/ReadMeAsset/1Week_Assignment2.png)
 Assets.xcassets 에 들어가서 원하는 사진을 Drag & Drop 해준다!  
 이후 해당 뷰컨에서 아래처럼 코드를 입력하면 사진을 ImageView에 삽입 가능!  
