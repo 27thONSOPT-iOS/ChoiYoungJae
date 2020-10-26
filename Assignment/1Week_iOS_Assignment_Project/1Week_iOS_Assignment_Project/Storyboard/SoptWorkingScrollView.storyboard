@@ -780,12 +780,25 @@
                                     <constraint firstAttribute="trailing" secondItem="G3n-70-nd7" secondAttribute="trailing" id="g8N-Ey-DaJ"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biU-BV-eqQ">
+                                <rect key="frame" x="310" y="901" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="biU-BV-eqQ" secondAttribute="height" multiplier="50:50" id="QLX-xG-Nrl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="topUpButtonAction:" destination="FNm-kR-Adj" eventType="touchUpInside" id="sQu-do-3DR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gxt-mU-GI1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="G3n-70-nd7" firstAttribute="height" secondItem="a9p-y8-rTf" secondAttribute="height" priority="250" id="MuJ-Qo-pAM"/>
                             <constraint firstItem="G3n-70-nd7" firstAttribute="width" secondItem="a9p-y8-rTf" secondAttribute="width" id="Ok3-gu-Bxa"/>
+                            <constraint firstItem="biU-BV-eqQ" firstAttribute="width" secondItem="a9p-y8-rTf" secondAttribute="width" multiplier="50/375" id="Y5s-Ej-ZoE"/>
+                            <constraint firstItem="gxt-mU-GI1" firstAttribute="trailing" secondItem="biU-BV-eqQ" secondAttribute="trailing" constant="15" id="YGk-Bt-kWP"/>
+                            <constraint firstItem="gxt-mU-GI1" firstAttribute="bottom" secondItem="biU-BV-eqQ" secondAttribute="bottom" constant="15" id="b3j-he-pVE"/>
                             <constraint firstItem="gxt-mU-GI1" firstAttribute="trailing" secondItem="JrF-XT-iwL" secondAttribute="trailing" id="d0r-uz-AG1"/>
                             <constraint firstItem="ryO-23-D93" firstAttribute="top" secondItem="JrF-XT-iwL" secondAttribute="bottom" id="gz6-Ei-zT7"/>
                             <constraint firstItem="gxt-mU-GI1" firstAttribute="trailing" secondItem="ryO-23-D93" secondAttribute="trailing" id="h8b-6n-TeL"/>
@@ -802,6 +815,9 @@
                         <outlet property="bannerNameLabel" destination="HuW-SB-8hF" id="QcL-K7-hba"/>
                         <outlet property="headerViewButton" destination="OrH-Vc-YKQ" id="g3W-yL-hL3"/>
                         <outlet property="headerViewLogo" destination="bp5-gb-1Oc" id="Hm3-aj-1Cs"/>
+                        <outlet property="scrollContentView" destination="G3n-70-nd7" id="PTv-nd-m9M"/>
+                        <outlet property="soptWorkingScrollView" destination="ryO-23-D93" id="EgM-FO-MO0"/>
+                        <outlet property="topButton" destination="biU-BV-eqQ" id="viI-ju-1MC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcA-FD-VWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class soptWorkingScrollView: UIViewController {
+class soptWorkingScrollView: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var headerViewLogo: UIImageView!
     @IBOutlet weak var headerViewButton: UIButton!
@@ -16,14 +16,23 @@ class soptWorkingScrollView: UIViewController {
     @IBOutlet weak var bannerNameLabel: UILabel!
     @IBOutlet weak var bannerContentLabel: UILabel!
     
+    @IBOutlet weak var soptWorkingScrollView: UIScrollView!
+    @IBOutlet weak var scrollContentView: UIView!
+    @IBOutlet weak var topButton: UIButton!
+    @IBAction func topUpButtonAction(_ sender: Any) {
+        soptWorkingScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        headerviewSet()
+        headerViewSet()
         bannerViewSet()
+        topButtonSet()
+        soptWorkingScrollView.delegate = self
     }
     
 
-    func headerviewSet(){
+    func headerViewSet(){
         headerViewLogo.image = UIImage(named : "soptLogo")
         
         headerViewButton.setTitle("프로필 작성하기", for: .normal)
@@ -47,4 +56,21 @@ class soptWorkingScrollView: UIViewController {
 
     }
     
+    func topButtonSet(){
+        topButton.backgroundColor = #colorLiteral(red: 255/255, green: 213/255, blue: 0/255, alpha: 1)
+        topButton.layer.cornerRadius = 25
+        topButton.setTitle("Top", for: .normal)
+        topButton.setTitleColor(.white, for: .normal)
+        topButton.isHidden = true
+
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if(soptWorkingScrollView.contentOffset.y >  (bannerImg.image?.size.height)!){
+                topButton.isHidden = false
+        }
+        else {
+            topButton.isHidden = true
+        }
+    }
 }
