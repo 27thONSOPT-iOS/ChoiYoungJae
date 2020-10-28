@@ -61,9 +61,10 @@ ContentSize는 말그대로 ContentView의 사이즈를 의미한다.
 이 사진을 보면 대충 무슨 느낌인지 알 수 있다.  
 
 이제 이 ContentOffset을 알면 TopUp IBAction 을 만들 수 있다.  
-버튼을 누르면 지정된 ContentOffset으로 이동하도록하는 메소드가 있다.  
-setContentOffset를 사용하면 된다!  
+
+지정된 ContentOffset으로 이동하도록하는 메소드로 **setContentOffset**이 있다.  
 이번 과제 같은 경우는 맨 위로 올라가는 버튼이니까 x, y 좌표를 0으로 설정해준다!  
+IBAction에 아래 코드를 넣어준다면, 버튼을 누를때 지정된 좌표로 이동하게된다.  
 
 ```swift
         soptWorkingScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
@@ -76,8 +77,8 @@ Topup버튼의 조건은, 버튼이 보이지 않다가 상단의 배너사진 �
 ![2Week_Assignment5](/ReadMe/ReadMeAsset/2Week_Assignment6.png)  
 애플 developer 사이트에 들어가면 해당 메소드에 대한 [설명](https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/1619392-scrollviewdidscroll?language=objc)을 볼 수 있다.  
 scrollViewDidScroll()은 유저가 스크롤을 할때마다 호출된다.   
-scrollViewDidScroll말고도 scrollViewWillBeginDragging, scrollViewWillEndDragging 등등이 있다.  
-더 다양한 친구들은 [여기서](https://yagom.net/forums/topic/uitableview에서-주로-사용되는-uiscrollviewdelegate를-알아보자/) 찾아볼 수 있다.
+scrollViewDidScroll말고도 scrollViewWillBeginDragging, scrollViewWillEndDragging 등등이 있는데  
+이와 또 다른 다양한 친구들은 [여기서](https://yagom.net/forums/topic/uitableview에서-주로-사용되는-uiscrollviewdelegate를-알아보자/) 찾아볼 수 있다.
 
 
 나는 아래처럼 scrollview의 contentoffset의 y값이 배너 사진의 height 값보다 더 커졌을때 topup button이 나타나도록 scrollViewDidScroll()에 코드를 짜주었다. 
@@ -93,8 +94,7 @@ scrollViewDidScroll말고도 scrollViewWillBeginDragging, scrollViewWillEndDragg
 ```
 
 이를 사용하긴 위해선 class를 선언할 때 UIScrollViewDelegate를 추가해주어야하고,   
-
-빼놓지 않고  viewdiddload()에 아래의 코드도 선언을 해주어야한다!
+빼놓지 않고  viewdiddload()에 아래의 코드도 선언을 해주어야한다!  
 ```Swift
 soptWorkingScrollView.delegate = self
 ```
@@ -105,4 +105,4 @@ topButton.isHidden = true
 ```
 
 그러면 도전과제까지 완성!ㅠ   
-너무 어렵네여 ㅠㅠ  
+  
