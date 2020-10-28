@@ -51,7 +51,7 @@ Character Wrap은 개별 문자단위로 줄넘김을 해준다는 설정이다.
 하지만 할 수 있다!
 
 ### 1. Contentoffset, ContentSize
-이번 도전과제를 하려면 Contentoffset, ContentSize의 개념을 알아야한다.
+이번 도전과제를 하려면 Contentoffset, ContentSize의 개념을 알아야한다.  
 Contentoffset는 유저가 화면을 scrolling 했을 때 표시되는 화면의 위치(지점)를 의미한다.  
 즉 유저가 scrolling을 한다면 계속해서 Contentoffset는 바뀌는 것!  
 
@@ -74,7 +74,7 @@ Topup버튼의 조건은, 버튼이 보이지 않다가 상단의 배너사진 �
 이를 위해선 UIScrollViewDelegate의 메소드인 **scrollViewDidScroll**를 사용해야한다.  
 
 ![2Week_Assignment5](/ReadMe/ReadMeAsset/2Week_Assignment6.png)  
-애플 developer사이트에 들어가면 해당 메소드에 대한 설명을 볼 수 있다.  
+애플 developer 사이트에 들어가면 해당 메소드에 대한 [설명](https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/1619392-scrollviewdidscroll?language=objc)을 볼 수 있다.  
 scrollViewDidScroll()은 유저가 스크롤을 할때마다 호출된다.   
 scrollViewDidScroll말고도 scrollViewWillBeginDragging, scrollViewWillEndDragging 등등이 있다.  
 더 다양한 친구들은 [여기서](https://yagom.net/forums/topic/uitableview에서-주로-사용되는-uiscrollviewdelegate를-알아보자/) 찾아볼 수 있다.
