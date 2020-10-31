@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Xp-lL-tfQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -9,58 +9,70 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Collection View TestVC-->
         <scene sceneID="J98-Ag-d1S">
             <objects>
-                <viewController id="3Xp-lL-tfQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CollectionViewTestVC" id="3Xp-lL-tfQ" customClass="CollectionViewTestVC" customModule="_7th_iOS_3Week_Seminar_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KlN-MP-WgB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YU8-vV-Vru">
-                                <rect key="frame" x="0.0" y="44" width="414" height="128"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Ei-G2-us1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="221"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="YU8-vV-Vru" secondAttribute="height" multiplier="207:64" id="bPA-Pg-Trh"/>
+                                    <constraint firstAttribute="width" secondItem="3Ei-G2-us1" secondAttribute="height" multiplier="15:8" id="NKs-FS-pxQ"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JsT-3i-C1H">
-                                    <size key="itemSize" width="416" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="obf-5y-3TG">
+                                    <size key="itemSize" width="414" height="218"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hs4-Sy-CQm">
-                                        <rect key="frame" x="0.0" y="0.0" width="416" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PartBannerCell" id="9Bf-Zm-BmM" customClass="PartBannerCell" customModule="_7th_iOS_3Week_Seminar_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1.5" width="414" height="218"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hbe-HR-x9v">
-                                            <rect key="frame" x="0.0" y="0.0" width="416" height="128"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2C1-dS-UaM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XWI-tl-kjg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="416" height="128"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6UV-Ha-gzw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="XWI-tl-kjg" firstAttribute="leading" secondItem="Hbe-HR-x9v" secondAttribute="leading" id="E4f-7S-k5i"/>
-                                                <constraint firstAttribute="bottom" secondItem="XWI-tl-kjg" secondAttribute="bottom" id="HdH-Fd-jXe"/>
-                                                <constraint firstAttribute="trailing" secondItem="XWI-tl-kjg" secondAttribute="trailing" id="SXA-M0-nUZ"/>
-                                                <constraint firstItem="XWI-tl-kjg" firstAttribute="top" secondItem="Hbe-HR-x9v" secondAttribute="top" id="m5r-bJ-Jew"/>
+                                                <constraint firstAttribute="bottom" secondItem="6UV-Ha-gzw" secondAttribute="bottom" id="5TN-1Q-iad"/>
+                                                <constraint firstAttribute="trailing" secondItem="6UV-Ha-gzw" secondAttribute="trailing" id="7YH-WL-zUq"/>
+                                                <constraint firstItem="6UV-Ha-gzw" firstAttribute="leading" secondItem="2C1-dS-UaM" secondAttribute="leading" id="8wd-FS-eGH"/>
+                                                <constraint firstItem="6UV-Ha-gzw" firstAttribute="top" secondItem="2C1-dS-UaM" secondAttribute="top" id="V6Q-Fh-5bI"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="416" height="128"/>
+                                        <size key="customSize" width="414" height="218"/>
+                                        <connections>
+                                            <outlet property="partImageView" destination="6UV-Ha-gzw" id="43A-ZN-4xz"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iKe-qD-oQP">
+                                <rect key="frame" x="145.5" y="233" width="123" height="28"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dw6-gB-esB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dw6-gB-esB" firstAttribute="trailing" secondItem="YU8-vV-Vru" secondAttribute="trailing" id="JcJ-Bg-ISQ"/>
-                            <constraint firstItem="YU8-vV-Vru" firstAttribute="leading" secondItem="dw6-gB-esB" secondAttribute="leading" id="iy7-Z2-AKH"/>
-                            <constraint firstItem="YU8-vV-Vru" firstAttribute="top" secondItem="dw6-gB-esB" secondAttribute="top" id="vAB-n2-YuK"/>
+                            <constraint firstItem="dw6-gB-esB" firstAttribute="trailing" secondItem="3Ei-G2-us1" secondAttribute="trailing" id="4eK-tb-2lo"/>
+                            <constraint firstItem="3Ei-G2-us1" firstAttribute="top" secondItem="dw6-gB-esB" secondAttribute="top" id="BLc-lN-V4s"/>
+                            <constraint firstItem="iKe-qD-oQP" firstAttribute="top" secondItem="3Ei-G2-us1" secondAttribute="bottom" constant="-32" id="aR7-Wx-uq3"/>
+                            <constraint firstItem="iKe-qD-oQP" firstAttribute="centerX" secondItem="3Ei-G2-us1" secondAttribute="centerX" id="kuP-Kk-tjl"/>
+                            <constraint firstItem="3Ei-G2-us1" firstAttribute="leading" secondItem="dw6-gB-esB" secondAttribute="leading" id="tmZ-7h-V8t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerPageControl" destination="iKe-qD-oQP" id="Mc2-Mw-FTG"/>
+                        <outlet property="partCollectionView" destination="3Ei-G2-us1" id="F4s-gR-UaS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voI-dZ-z2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
