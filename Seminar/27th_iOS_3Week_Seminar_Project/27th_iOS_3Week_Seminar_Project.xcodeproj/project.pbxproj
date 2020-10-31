@@ -22,6 +22,7 @@
 		06F5B12A254D48150046E16D /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B129254D48150046E16D /* Music.swift */; };
 		06F5B12D254D4A310046E16D /* MusicInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F5B12C254D4A310046E16D /* MusicInfo.storyboard */; };
 		06F5B130254D4A5A0046E16D /* MusicInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B12F254D4A5A0046E16D /* MusicInfoVC.swift */; };
+		06F5B133254D5AB20046E16D /* CollectionViewTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F5B132254D5AB20046E16D /* CollectionViewTest.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		06F5B129254D48150046E16D /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		06F5B12C254D4A310046E16D /* MusicInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicInfo.storyboard; sourceTree = "<group>"; };
 		06F5B12F254D4A5A0046E16D /* MusicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfoVC.swift; sourceTree = "<group>"; };
+		06F5B132254D5AB20046E16D /* CollectionViewTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewTest.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				06F5B108254D33D10046E16D /* Main.storyboard */,
 				06F5B117254D34A00046E16D /* PickerViewTest.storyboard */,
 				06F5B120254D40750046E16D /* TableViewTest.storyboard */,
+				06F5B132254D5AB20046E16D /* CollectionViewTest.storyboard */,
 				06F5B12C254D4A310046E16D /* MusicInfo.storyboard */,
 				06F5B12F254D4A5A0046E16D /* MusicInfoVC.swift */,
 				06F5B129254D48150046E16D /* Music.swift */,
@@ -153,6 +156,7 @@
 			files = (
 				06F5B12D254D4A310046E16D /* MusicInfo.storyboard in Resources */,
 				06F5B121254D40750046E16D /* TableViewTest.storyboard in Resources */,
+				06F5B133254D5AB20046E16D /* CollectionViewTest.storyboard in Resources */,
 				06F5B10F254D33D20046E16D /* LaunchScreen.storyboard in Resources */,
 				06F5B118254D34A00046E16D /* PickerViewTest.storyboard in Resources */,
 				06F5B10C254D33D20046E16D /* Assets.xcassets in Resources */,
