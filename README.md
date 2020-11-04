@@ -31,7 +31,7 @@
 | Week  |                           Contents                           |                       Readme                       | Duedate  | Note  |
 | :---: | :----------------------------------------------------------: | :------------------------------------------------: | :------: | :---: |
 | 1주차 | **기본과제** : Present, Push, Pop하기 \\ **도전과제** : 데이터 전달하기 | [1Week Readme](/ReadMe/1Week_Assignment_README.md) | 20/10/16 | 완료! |
-| 2주차 | **기본과제** : AutoLayout, StackView, ScrollView사용 \\ **도전과제** : Top button 구현하기 | [2Week Readme](/ReadMe/2Week_Assignment_README.md) | 20/10/30 | 완료! |
-| 3주차 |                                                              |                                                    |          |       |
+| 2주차 | **기본과제** : AutoLayout, StackView, ScrollView 사용 \\ **도전과제** : Top button 구현하기 | [2Week Readme](/ReadMe/2Week_Assignment_README.md) | 20/10/30 | 완료! |
+| 3주차 |    **기본과제** : DelegatePattern, CollectionView 만들기     | [3Week Readme](/ReadMe/3Week_Assignment_README.md) | 20/11/06 | 완료! |
 | 4주차 |                                                              |                                                    |          |       |
 
