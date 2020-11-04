@@ -52,8 +52,6 @@ class soptWorkingScrollView: UIViewController, UIScrollViewDelegate {
         bannerContentLabel.font = UIFont.systemFont(ofSize: 10)
         bannerContentLabel.textColor = .white
 
-
-
     }
     
     func topButtonSet(){

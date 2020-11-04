@@ -17,6 +17,9 @@
 		0651AA9B2534375200330D03 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651AA9A2534375200330D03 /* signUpVC.swift */; };
 		0664BA002546ADA700339EF6 /* SoptWorkingScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0664B9FF2546ADA700339EF6 /* SoptWorkingScrollView.storyboard */; };
 		0664BA032546B5F600339EF6 /* soptWorkingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0664BA022546B5F600339EF6 /* soptWorkingScrollView.swift */; };
+		06F5B1402552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B13F2552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift */; };
+		06F5B1452552EF310046E16D /* soptWorkingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B1442552EF310046E16D /* soptWorkingCollectionViewCell.swift */; };
+		06F5B1492552F2870046E16D /* soptPeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B1482552F2870046E16D /* soptPeopleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		0651AA9A2534375200330D03 /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		0664B9FF2546ADA700339EF6 /* SoptWorkingScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SoptWorkingScrollView.storyboard; sourceTree = "<group>"; };
 		0664BA022546B5F600339EF6 /* soptWorkingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soptWorkingScrollView.swift; sourceTree = "<group>"; };
+		06F5B13F2552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoptWorkingScrollCollectionVC.swift; sourceTree = "<group>"; };
+		06F5B1442552EF310046E16D /* soptWorkingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soptWorkingCollectionViewCell.swift; sourceTree = "<group>"; };
+		06F5B1482552F2870046E16D /* soptPeopleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soptPeopleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,10 @@
 				0651AA922534358F00330D03 /* firstVC.swift */,
 				0651AA972534374100330D03 /* loginVC.swift */,
 				0651AA9A2534375200330D03 /* signUpVC.swift */,
+				06F5B13F2552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift */,
 				0664BA022546B5F600339EF6 /* soptWorkingScrollView.swift */,
+				06F5B1442552EF310046E16D /* soptWorkingCollectionViewCell.swift */,
+				06F5B1482552F2870046E16D /* soptPeopleData.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -178,8 +187,11 @@
 				0651AA982534374100330D03 /* loginVC.swift in Sources */,
 				0651AA7E253426CE00330D03 /* AppDelegate.swift in Sources */,
 				0651AA932534358F00330D03 /* firstVC.swift in Sources */,
+				06F5B1452552EF310046E16D /* soptWorkingCollectionViewCell.swift in Sources */,
 				0651AA80253426CE00330D03 /* SceneDelegate.swift in Sources */,
 				0664BA032546B5F600339EF6 /* soptWorkingScrollView.swift in Sources */,
+				06F5B1402552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift in Sources */,
+				06F5B1492552F2870046E16D /* soptPeopleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
