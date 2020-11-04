@@ -17,23 +17,23 @@
 DelegateDataFlow를 사용하여 코드로 원하는 위치와 크기를 잡아줄 수 있기 때문!  
 하지만 애초에 CollectionView의 오토레이아웃을 맞춰둔다면 신경쓸게 적어지기 때문에 더 편하게 작업을 할 수 있다.  
 나는 아래와 같이 오토레이아웃을 잡아주고 작업을 시작했다!  
-![2Week_Assignment2](/ReadMe/ReadMeAsset/2Week_Assignment2.png)  
+![3Week_Assignment2](/ReadMe/ReadMeAsset/3Week_Assignment2.png)  
 
 #### CollectionViewCell  
 그렇다면 cell에서 표현되는 개체들은 어떻게 오토레이아웃을 잡아주지??  
 별거 없다!   
 Cell의 ContentView 안에서 우리가 하듯이 오토레이아웃을 잡아주면 된다! 
 
-![2Week_Assignment3](/ReadMe/ReadMeAsset/2Week_Assignment3.png)  
+![3Week_Assignment3](/ReadMe/ReadMeAsset/3Week_Assignment3.png)  
 
 
 #### 오토레이아웃 다 잡아줬는데 컬렉션 뷰가 왜 이상하게 나오지?? ㅠ  
-![2Week_Assignment4](/ReadMe/ReadMeAsset/2Week_Assignment4.png)  
+![3Week_Assignment4](/ReadMe/ReadMeAsset/3Week_Assignment4.png)  
 이것보세요  
 컬렉션 뷰가 난장판이 되었네~  
 분명히 오토레이아웃도 잘잡아주고 코드도 잘 짜준거 같은데 뭐가 문제일까??  
 
-![2Week_Assignment5](/ReadMe/ReadMeAsset/2Week_Assignment5.png)  
+![3Week_Assignment5](/ReadMe/ReadMeAsset/3Week_Assignment5.png)  
 Collection View의 Estimate Size를 None으로 설정해주지 않았을 가능성이 크다!  
 이걸 none으로 해주어야 내가 원하는대로 셀이 배열이 될 수 있다!!  
 쉽게 지나칠 수 있는 부분이니 꼭 확인해야한다!  
@@ -50,7 +50,7 @@ Scroll View가 제대로 작동을 안한다면 bottom에 오토레이아웃이 
 
 이를 해결하는 방법은 간단하다.   
 둘 중 Collection View에서 사용자에 의한 조작을 막는 것!  
-![2Week_Assignment6](/ReadMe/ReadMeAsset/2Week_Assignment6.png)  
+![3Week_Assignment6](/ReadMe/ReadMeAsset/3Week_Assignment6.png)  
 
 엥?? CollectionView의 cell 갯수가 여러개인데 조작을 막아서 스크롤을 못하게하면 그걸 어떻게 다 보나요???  
 이건 cell item 갯수를 다 표시할 수 있을만큼 CollectionView의 height까지 지정해주면 된다.  

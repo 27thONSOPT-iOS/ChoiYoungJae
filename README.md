@@ -34,4 +34,5 @@
 | 2주차 | **기본과제** : AutoLayout, StackView, ScrollView 사용 \\ **도전과제** : Top button 구현하기 | [2Week Readme](/ReadMe/2Week_Assignment_README.md) | 20/10/30 | 완료! |
 | 3주차 |    **기본과제** : DelegatePattern, CollectionView 만들기     | [3Week Readme](/ReadMe/3Week_Assignment_README.md) | 20/11/06 | 완료! |
 | 4주차 |                                                              |                                                    |          |       |
+| 5주차 |                                                              |                                                    |          |       |
 
