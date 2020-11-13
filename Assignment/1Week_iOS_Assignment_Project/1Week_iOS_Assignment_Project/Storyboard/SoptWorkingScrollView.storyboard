@@ -983,7 +983,7 @@
             <objects>
                 <viewController id="usA-5Q-QIC" customClass="SoptWorkingScrollCollectionVC" customModule="_Week_iOS_Assignment_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sms-E8-ih4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVJ-9G-3SU">
@@ -1015,10 +1015,10 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HQ-Sc-FMg">
-                                <rect key="frame" x="0.0" y="88" width="375" height="912"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="1412"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="1700" translatesAutoresizingMaskIntoConstraints="NO" id="vBA-dQ-VUd">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1829"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="1700" translatesAutoresizingMaskIntoConstraints="NO" id="vBA-dQ-VUd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w83-XH-5Eq">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
@@ -1062,11 +1062,11 @@
                                                     <constraint firstAttribute="bottom" secondItem="5pZ-7E-XPJ" secondAttribute="bottom" id="oDl-Eg-x95"/>
                                                 </constraints>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LQH-Yg-kog">
-                                                <rect key="frame" x="24" y="461" width="327" height="1356"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LQH-Yg-kog">
+                                                <rect key="frame" x="24" y="461" width="327" height="1456"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1356" id="cRC-NA-8op"/>
+                                                    <constraint firstAttribute="height" constant="1556" id="cRC-NA-8op"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rzC-m9-200">
                                                     <size key="itemSize" width="263" height="374"/>
@@ -1169,20 +1169,23 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="SOPT + Working" image="paperplane" catalog="system" selectedImage="paperplane.fill" id="bLz-11-REY"/>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="1500"/>
                     <connections>
                         <outlet property="headerButton" destination="KZy-l0-pET" id="QDP-34-Ekf"/>
                         <outlet property="headerLogo" destination="9I5-Q0-une" id="Qmu-5R-GPQ"/>
+                        <outlet property="headerView" destination="eVJ-9G-3SU" id="nEq-WE-O8O"/>
                         <outlet property="soptBannerBarView" destination="y9U-ja-Wl3" id="dn9-KD-dJg"/>
                         <outlet property="soptBannerContentLabel" destination="c3c-XU-3KB" id="mnQ-wV-DQC"/>
                         <outlet property="soptBannerImg" destination="5pZ-7E-XPJ" id="7f5-rL-rvz"/>
                         <outlet property="soptBannerNameLabel" destination="9DD-4l-inn" id="IdM-nb-313"/>
+                        <outlet property="soptScrollView" destination="4HQ-Sc-FMg" id="kJW-uh-gVG"/>
                         <outlet property="soptWorkingCollectionView" destination="LQH-Yg-kog" id="gJp-Mn-lAf"/>
+                        <outlet property="soptWorkingView" destination="sms-E8-ih4" id="1QR-bv-8Oh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4E-6z-qfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1520" y="479"/>
+            <point key="canvasLocation" x="1519.5652173913045" y="478.79464285714283"/>
         </scene>
         <!--Login Tab Bar Controller-->
         <scene sceneID="Lmq-Me-xYP">

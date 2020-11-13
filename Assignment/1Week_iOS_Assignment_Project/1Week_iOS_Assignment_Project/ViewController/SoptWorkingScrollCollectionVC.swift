@@ -9,9 +9,12 @@ import UIKit
 
 class SoptWorkingScrollCollectionVC: UIViewController {
     
+    @IBOutlet var soptWorkingView: UIView!
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var headerLogo: UIImageView!
     @IBOutlet weak var headerButton: UIButton!
-    
+   
+    @IBOutlet weak var soptScrollView: UIScrollView!
     @IBOutlet weak var soptBannerImg: UIImageView!
     @IBOutlet weak var soptBannerNameLabel: UILabel!
     @IBOutlet weak var soptBannerContentLabel: UILabel!
@@ -30,6 +33,7 @@ class SoptWorkingScrollCollectionVC: UIViewController {
         setSoptPeopleData()
         self.soptWorkingCollectionView.delegate = self
         self.soptWorkingCollectionView.dataSource = self
+        self.soptScrollView.delegate = self
     }
     
     
@@ -132,4 +136,28 @@ extension SoptWorkingScrollCollectionVC: UICollectionViewDelegateFlowLayout{
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
+    
+    
+    
+}
+
+
+extension SoptWorkingScrollCollectionVC : UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > 0 {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.soptWorkingView.transform = CGAffineTransform(translationX: 0, y: -88)
+            })
+        }
+        else {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.soptWorkingView.transform = CGAffineTransform(translationX: 0, y: 0)
+            })
+    }
+}
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        UIView.animate(withDuration: 0.6, animations: {
+            self.soptWorkingView.transform = CGAffineTransform(translationX: 0, y: 0)
+        })
+    }
 }
