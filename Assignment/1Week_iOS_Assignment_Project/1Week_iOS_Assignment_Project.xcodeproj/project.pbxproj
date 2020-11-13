@@ -20,6 +20,9 @@
 		06F5B1402552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B13F2552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift */; };
 		06F5B1452552EF310046E16D /* soptWorkingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B1442552EF310046E16D /* soptWorkingCollectionViewCell.swift */; };
 		06F5B1492552F2870046E16D /* soptPeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B1482552F2870046E16D /* soptPeopleData.swift */; };
+		06F5B1A4255E627A0046E16D /* soptWorkingHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B1A3255E627A0046E16D /* soptWorkingHomeVC.swift */; };
+		06F5B1A8255E67FF0046E16D /* soptWorkingLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B1A7255E67FF0046E16D /* soptWorkingLoginVC.swift */; };
+		06F5B1B0255E75350046E16D /* LoginTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B1AF255E75350046E16D /* LoginTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		06F5B13F2552E28A0046E16D /* SoptWorkingScrollCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoptWorkingScrollCollectionVC.swift; sourceTree = "<group>"; };
 		06F5B1442552EF310046E16D /* soptWorkingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soptWorkingCollectionViewCell.swift; sourceTree = "<group>"; };
 		06F5B1482552F2870046E16D /* soptPeopleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soptPeopleData.swift; sourceTree = "<group>"; };
+		06F5B1A3255E627A0046E16D /* soptWorkingHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soptWorkingHomeVC.swift; sourceTree = "<group>"; };
+		06F5B1A7255E67FF0046E16D /* soptWorkingLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = soptWorkingLoginVC.swift; path = 1Week_iOS_Assignment_Project/Storyboard/soptWorkingLoginVC.swift; sourceTree = SOURCE_ROOT; };
+		06F5B1AF255E75350046E16D /* LoginTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginTabBarController.swift; path = 1Week_iOS_Assignment_Project/Storyboard/LoginTabBarController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 		0651AA952534359F00330D03 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				06F5B1AF255E75350046E16D /* LoginTabBarController.swift */,
+				06F5B1A7255E67FF0046E16D /* soptWorkingLoginVC.swift */,
 				0651AA922534358F00330D03 /* firstVC.swift */,
 				0651AA972534374100330D03 /* loginVC.swift */,
 				0651AA9A2534375200330D03 /* signUpVC.swift */,
@@ -91,6 +99,7 @@
 				0664BA022546B5F600339EF6 /* soptWorkingScrollView.swift */,
 				06F5B1442552EF310046E16D /* soptWorkingCollectionViewCell.swift */,
 				06F5B1482552F2870046E16D /* soptPeopleData.swift */,
+				06F5B1A3255E627A0046E16D /* soptWorkingHomeVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -185,7 +194,10 @@
 			files = (
 				0651AA9B2534375200330D03 /* signUpVC.swift in Sources */,
 				0651AA982534374100330D03 /* loginVC.swift in Sources */,
+				06F5B1A8255E67FF0046E16D /* soptWorkingLoginVC.swift in Sources */,
+				06F5B1B0255E75350046E16D /* LoginTabBarController.swift in Sources */,
 				0651AA7E253426CE00330D03 /* AppDelegate.swift in Sources */,
+				06F5B1A4255E627A0046E16D /* soptWorkingHomeVC.swift in Sources */,
 				0651AA932534358F00330D03 /* firstVC.swift in Sources */,
 				06F5B1452552EF310046E16D /* soptWorkingCollectionViewCell.swift in Sources */,
 				0651AA80253426CE00330D03 /* SceneDelegate.swift in Sources */,
