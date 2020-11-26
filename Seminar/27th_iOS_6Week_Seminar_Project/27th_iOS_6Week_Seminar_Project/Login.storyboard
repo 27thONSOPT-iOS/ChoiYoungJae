@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7tw-mw-uzD">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="Fhm-3G-RQN">
+            <objects>
+                <viewController id="7tw-mw-uzD" customClass="LoginVC" customModule="_7th_iOS_6Week_Seminar_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NYK-SC-vh5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="pdS-qB-fXQ">
+                                <rect key="frame" x="37.333333333333343" y="332" width="300.33333333333326" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-JT-7a4">
+                                        <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="34"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Password">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="AdobeGothicStd-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RzT-Fg-lhp">
+                                        <rect key="frame" x="100.33333333333331" y="0.0" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Ift-MR-PQ2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkg-HX-Ei1">
+                                <rect key="frame" x="168" y="391" width="39" height="30"/>
+                                <state key="normal" title="로그인"/>
+                                <connections>
+                                    <action selector="touchUpLogin:" destination="7tw-mw-uzD" eventType="touchUpInside" id="sk1-Go-2uu"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DZ1-1t-wsg">
+                                <rect key="frame" x="67" y="273" width="270.66666666666669" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOp-Zg-8Dh">
+                                        <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="34"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="E-Mail">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="AppleSDGothicNeo-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibH-pe-WYJ">
+                                        <rect key="frame" x="70.666666666666657" y="0.0" width="199.99999999999997" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="f3P-lf-hhG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHy-9l-5rI">
+                                <rect key="frame" x="146.66666666666666" y="446" width="82" height="30"/>
+                                <state key="normal" title="회원가입 하기"/>
+                                <connections>
+                                    <action selector="touchUpSignUp:" destination="7tw-mw-uzD" eventType="touchUpInside" id="ib9-mT-LSE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NVD-8R-YEV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pdS-qB-fXQ" firstAttribute="top" secondItem="DZ1-1t-wsg" secondAttribute="bottom" constant="25" id="1Y5-p4-kqh"/>
+                            <constraint firstItem="Vkg-HX-Ei1" firstAttribute="centerY" secondItem="NYK-SC-vh5" secondAttribute="centerY" id="6bw-QT-7ZC"/>
+                            <constraint firstItem="lHy-9l-5rI" firstAttribute="centerX" secondItem="NYK-SC-vh5" secondAttribute="centerX" id="GOx-DP-pXW"/>
+                            <constraint firstItem="DZ1-1t-wsg" firstAttribute="trailing" secondItem="pdS-qB-fXQ" secondAttribute="trailing" id="PiJ-5T-3h9"/>
+                            <constraint firstItem="lHy-9l-5rI" firstAttribute="top" secondItem="Vkg-HX-Ei1" secondAttribute="bottom" constant="25" id="Psd-CQ-PWc"/>
+                            <constraint firstItem="pdS-qB-fXQ" firstAttribute="centerX" secondItem="NYK-SC-vh5" secondAttribute="centerX" id="Qyr-dE-e8M"/>
+                            <constraint firstItem="Vkg-HX-Ei1" firstAttribute="top" secondItem="pdS-qB-fXQ" secondAttribute="bottom" constant="25" id="SlD-2e-kEt"/>
+                            <constraint firstItem="Vkg-HX-Ei1" firstAttribute="centerX" secondItem="NYK-SC-vh5" secondAttribute="centerX" id="hhP-hu-Y7n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ibH-pe-WYJ" id="PHv-aQ-b1o"/>
+                        <outlet property="passwordTextField" destination="RzT-Fg-lhp" id="uXB-Uw-Q2v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vg8-hz-o1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="116.74876847290641"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
