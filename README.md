@@ -34,5 +34,5 @@
 | 2주차 | **기본과제** : AutoLayout, StackView, ScrollView 사용 \\ **도전과제** : Top button 구현하기 |    [2Week Readme](/ReadMe/2Week_Assignment_README.md)     | 20/10/30 | 완료! |
 | 3주차 |    **기본과제** : DelegatePattern, CollectionView 만들기     |    [3Week Readme](/ReadMe/3Week_Assignment_README.md)     | 20/11/06 | 완료! |
 | 4주차 | **기본과제** : TextField에 Animation 넣기 \\ **도전과제** : ScrollView에 Animation 넣기 (김민희 화이팅🔥) | 졸업논문 제출이 코 앞이라ㅠㅠ   리드미는 나중에 작성예정! | 20/11/13 | 완료! |
-| 5주차 |                                                              |                                                           |          |       |
+| 6주차 |               **기본과제** : 회원가입 통신하기               |    [6Week Readme](/ReadMe/6Week_Assignment_README.md)     | 20/11/27 | 완료! |
 
