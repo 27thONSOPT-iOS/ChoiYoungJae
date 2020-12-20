@@ -6,7 +6,7 @@
 
 ## - 구동 화면 
 
-![4Week_Assignment_Capture](/ReadMe/ReadMeAsset/3Week_Simulater.gif) 
+![4Week_Assignment_Capture](/ReadMe/ReadMeAsset/4Week_Simulater.gif) 
 
 ### 1) Tabbar 생성하기  
 Tabbar 생성하는건 세미나 때 배운대로만 하면 되기 때문에 설명 생략! :)
