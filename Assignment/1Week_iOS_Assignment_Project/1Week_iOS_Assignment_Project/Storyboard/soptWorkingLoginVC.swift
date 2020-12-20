@@ -71,11 +71,9 @@ extension soptWorkingLoginVC {
             self.loginPartTextField.transform = move
         })
         
-//        self.view.frame.origin.y = -150
         
     }
     @objc func keyBoardDown(_ sender: Notification) {
-//        self.view.frame.origin.y = 0
         
         UIView.animate(withDuration: 0.5, animations: {
             self.loginImg.transform = .identity
